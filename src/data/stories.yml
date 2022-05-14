@@ -1,0 +1,54 @@
+version: "3.1"
+
+stories:
+
+- story: job path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: job_search
+  - action: utter_job_kind
+  - intent: off_campus
+  - action: utter_job_type
+  - intent: full_time
+  - action: utter_student
+  - intent: student
+  - action: utter_ask_Title
+  - intent: Title
+    entities:
+      - Title: "Software Engineer"
+  - action: action_Title
+  - intent: affirm
+  - action: action_job_api
+  - intent: apply
+  - action: utter_ask_Name
+  - intent: Name
+    entities:
+      - Name: "Vineet"
+  - action: action_Name
+  - intent: Email
+    entities:
+      - Email: "vineet.kiagi@gmail.com"
+  - action: action_Email
+  - intent: Age
+    entities:
+      - Age: "21"
+  - action: action_Age
+  - intent: Gender
+    entities:
+      - Gender: "Male"
+  - action: action_Gender
+  - intent: University
+    entities:
+      - University: "San Jose State University"
+  - action: action_University
+  - intent: Experience
+    entities:
+      - Experience: "2"
+  - action: action_Experience
+  - intent: storedatabase
+  - action: action_store
+  - intent: goodbye
+  - action: utter_goodbye
+
+

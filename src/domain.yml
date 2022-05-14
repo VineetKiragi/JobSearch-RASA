@@ -1,0 +1,184 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - permit
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - job_search
+  - on_campus
+  - off_campus
+  - full_time
+  - part_time
+  - student
+  - Name
+  - Email
+  - Age
+  - Gender
+  - Experience
+  - University
+  - storedatabase
+  - eligible
+  - Title
+  - apply
+
+entities:
+  - Name
+  - Email
+  - Age
+  - Gender
+  - Experience
+  - University
+  - Title
+
+slots:
+  Name:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: Name
+  Email:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: Email
+  Age:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: Age
+  Gender:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: Gender
+  University:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: University
+  Experience:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: Experience
+  Title:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: Title
+
+
+actions:
+  - utter_greet
+  - utter_cheer_up
+  - utter_did_that_help
+  - utter_happy
+  - utter_goodbye
+  - utter_job_kind
+  - utter_job_type
+  - utter_student
+  - utter_eligible
+  - utter_work_permit
+  - utter_ask_Name
+  - utter_ask_Email
+  - utter_ask_Age
+  - utter_ask_Gender
+  - utter_ask_University
+  - utter_ask_Experience
+  - utter_ask_Jobs
+  - utter_denial
+  - utter_ask_store
+  - utter_api_result
+  - utter_ask_Title
+  - utter_ask_Apply
+  - action_Name
+  - action_Email
+  - action_store
+  - action_job_api
+  - action_Age
+  - action_Title
+  - action_Gender
+  - action_University
+  - action_Experience
+
+
+responses:
+  utter_greet:
+  - text: "Hey! I'm here to assist with your job search and answer questions about the job application. 
+           How may I assist you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_job_kind:
+  - text: "What kind of job do you want? 1.On Campus 2.Off Campus"
+
+  utter_job_type:
+  - text: "How long do you wanna work? 1.Part Time 2.Full Time"
+
+  utter_student:
+  - text: "Are you a Student?"
+
+  utter_eligible:
+  - text: "Are you eligible to work as a Student?"
+
+  utter_ask_Name:
+  - text: "Provide your Name?"
+
+  utter_ask_Email:
+  - text: "Provide your Email?"
+
+  utter_ask_Age:
+  - text: "How old are you?"
+
+  utter_ask_Gender:
+  - text: "What is your Gender?"
+
+  utter_ask_University:
+  - text: "What is your University?"
+
+  utter_ask_Experience:
+  - text: "Do you have any work Experience? If Yes How many years?"
+
+  utter_work_permit:
+  - text: "Do you need work permit?"
+
+  utter_denial:
+  - text: "Sorry.You are not eligible to work at your current status and job choice."
+
+  utter_ask_store:
+  - text: "These are the values that you provided do you want to store"
+
+  utter_api_result:
+  - text: "These are the jobs:\n {temp}"
+
+  utter_ask_Jobs:
+  - text: "Do you want to see the jobs with this title?"
+
+  utter_ask_Title:
+  - text: "What is the probable job title you are looking for?"
+
+  utter_ask_Apply:
+  - text: "Do you wanna apply for any of these jobs?"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

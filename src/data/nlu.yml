@@ -1,0 +1,242 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: job_search
+  examples: |
+    - job
+    - Find me a job
+    - Can you find me a job?
+    - I am looking for a job
+    - Find a job
+    - looking for job
+    - job search
+    - Find me a job
+
+- intent: on_campus
+  examples: |
+    - On Campus
+    - on campus
+    - On campus
+    - on Campus
+    - oncampus
+    - ONcampus
+    - 1
+    - 1st
+    - ON
+    - on
+    - On 
+    - ONCAMPUS
+    - oncampus
+    - ONCAMPUS
+    - I am looking for On Campus jobs
+
+- intent: off_campus
+  examples: |
+    - Off Campus
+    - off campus
+    - Off campus
+    - off Campus
+    - offcampus
+    - OFFcampus
+    - 2
+    - 2nd
+    - OFF
+    - off
+    - Off 
+    - OFFCAMPUS
+    - offcampus
+    - offCAMPUS
+    - I am lookinf for Off Campus jobs
+
+- intent: full_time
+  examples: |
+    - full time
+
+- intent: permit
+  examples: |
+    - Yes I need a work permit.
+    - Yes I do need a permit.
+    - I do need 
+
+- intent: student
+  examples: |
+    - Yes I am a Student
+    - yes I am studying in a college.
+    - student
+    - Student
+    - I am a Student
+    - i am a student
+    - a student
+
+- intent: eligible
+  examples: |
+    - Yes I am a eligible
+    - yes I am authorized to work.
+    - eligible
+    - okay to work
+
+- intent: Name
+  examples: |
+    - my Name is [Vineet](Name)
+    - [Shreyansh](Name)
+    - [Anurag](Name)
+    - [Ashish](Name)
+    - [Omkar](Name)
+    - [Vamshi](Name)
+
+- intent: Email
+  examples: |
+    - [vineet.kiragi@gmail.com](Email)
+    - [name.last@gmail.com](Email)
+    - [vamshi@gmail.com](Email)
+    - [ashish@gmail.com](Email)
+
+- intent: Age
+  examples: |
+    - I am [21](Age) years old
+    - [32](Age)
+    - [44](Age)
+    - [56](Age)
+
+- intent: Gender
+  examples: |
+    - [Male](Gender)
+    - [Female](Gender)
+    - I am [gender fluid](Gender)
+    - [Non Binary](Gender)
+  
+- intent: University
+  examples: |
+    - [San Jose State University](University)
+    - [Priceton Univercity](University)
+    - [De Anza College](University)
+    - [Charles](University)
+
+- intent: Experience
+  examples: |
+    - I have [two](Experience) years of experience
+    - I have worked for [five](Experience) years.
+    - [20](Experience)
+    - I am a [fresher](Experience)
+    - I dont have any experience [0](Experience)
+    - 
+
+- intent: storedatabase
+  examples: |
+    - yes I want to store my information
+    - yes store my current information
+    - yes store info
+    - yes dump the info
+
+- intent: Title
+  examples: |
+    - [Software Engineer](Title)
+    - [Consultant](Title)
+    - [Legal](Title)
+    - [Engineer](Title)
+
+- intent: apply
+  examples: |
+    - yes I want to apply
+    - yes please apply
+    - apply
+    - yes please do apply
+
+- intent: part_time
+  examples: |
+    - part time
+   
+ 
+  
+  
+
+
